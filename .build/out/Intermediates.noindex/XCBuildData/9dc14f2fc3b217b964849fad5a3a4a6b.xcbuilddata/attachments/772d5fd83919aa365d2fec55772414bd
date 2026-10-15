@@ -1,0 +1,89 @@
+{
+  "" : {
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.dia",
+    "emit-module-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary-emit-module.dia",
+    "pch" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.swiftdeps"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/AppDelegate.swift" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/Bezel.swift" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Bezel.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Bezel.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Bezel.dia",
+    "index-unit-output-path" : "/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Bezel.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Bezel.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Bezel.o",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Bezel.swiftdeps",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Bezel~partial.swiftmodule"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/GestureEngine.swift" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.dia",
+    "index-unit-output-path" : "/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.o",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.swiftdeps",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine~partial.swiftmodule"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/Permissions.swift" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Permissions.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Permissions.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Permissions.dia",
+    "index-unit-output-path" : "/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Permissions.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Permissions.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Permissions.o",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Permissions.swiftdeps",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Permissions~partial.swiftmodule"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/Settings.swift" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Settings.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Settings.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Settings.dia",
+    "index-unit-output-path" : "/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Settings.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Settings.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Settings.o",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Settings.swiftdeps",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Settings~partial.swiftmodule"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/SettingsView.swift" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/WindowControl.swift" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/WindowControl.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/WindowControl.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/WindowControl.dia",
+    "index-unit-output-path" : "/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/WindowControl.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/WindowControl.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/WindowControl.o",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/WindowControl.swiftdeps",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/WindowControl~partial.swiftmodule"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/main.swift" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/main.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/main.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/main.dia",
+    "index-unit-output-path" : "/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/main.o",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/main.swiftdeps",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/main~partial.swiftmodule"
+  }
+}

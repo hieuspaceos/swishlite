@@ -1,0 +1,51 @@
+{
+  "" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.dia",
+    "emit-module-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary-emit-module.dia",
+    "pch" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.swiftdeps"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/AppDelegate.swift" : {
+    "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/Bezel.swift" : {
+    "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Bezel.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Bezel.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Bezel.o"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/GestureEngine.swift" : {
+    "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/GestureEngine.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/GestureEngine.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/GestureEngine.o"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/Permissions.swift" : {
+    "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Permissions.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Permissions.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Permissions.o"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/Settings.swift" : {
+    "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Settings.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Settings.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Settings.o"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/SettingsView.swift" : {
+    "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SettingsView.o"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/WindowControl.swift" : {
+    "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/WindowControl.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/WindowControl.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/WindowControl.o"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/main.swift" : {
+    "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/main.o"
+  }
+}

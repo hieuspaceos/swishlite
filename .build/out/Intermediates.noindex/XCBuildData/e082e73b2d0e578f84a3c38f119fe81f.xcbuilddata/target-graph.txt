@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'AllExcludingTests' in project 'Aggregate'
+➜ Explicit dependency on target 'SwishLite-product' in project 'SwishLite'
+Target 'SwishLite-product' in project 'SwishLite' (no dependencies)
