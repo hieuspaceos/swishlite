@@ -152,10 +152,12 @@ final class GestureEngine: ObservableObject {
             let fy = inv ? dy : -dy
             // Allow through when a tracked minimized window exists: its frame is in
             // the Dock so a plain titlebar hit-test would wrongly drop the event.
-            let onTitleBar = lastMinimizedWindow != nil || Self.pointOnAnyTitleBar(loc)
+            let dockItem = DockIcon.dockItemAt(loc)
+            let onTitleBar = dockItem != nil || lastMinimizedWindow != nil || Self.pointOnAnyTitleBar(loc)
             if onTitleBar && (dx != 0 || dy != 0) {
+                let dockPID = dockItem?.pid ?? 0
                 DispatchQueue.main.async { [weak self] in
-                    self?.handleScrollDelta(dx: fx, dy: fy, at: loc)
+                    self?.handleScrollDelta(dx: fx, dy: fy, at: loc, dockPID: dockPID)
                 }
             }
             // consume only while a committed swipe is in progress (Swish's isSwiping flag)
@@ -165,10 +167,11 @@ final class GestureEngine: ObservableObject {
             guard let ev = NSEvent(cgEvent: event) else { return Unmanaged.passUnretained(event) }
             if ev.type == .magnify {
                 let mag = ev.magnification
-                let onTitleBar = Self.pointOnAnyTitleBar(loc)
+                let dockPID = DockIcon.dockItemAt(loc)?.pid ?? 0
+                let onTitleBar = dockPID != 0 || Self.pointOnAnyTitleBar(loc)
                 if onTitleBar {
                     DispatchQueue.main.async { [weak self] in
-                        self?.handleMagnify(mag, at: loc)
+                        self?.handleMagnify(mag, at: loc, dockPID: dockPID)
                     }
                 }
                 return onTitleBar ? nil : Unmanaged.passUnretained(event)
@@ -205,19 +208,36 @@ final class GestureEngine: ObservableObject {
     nonisolated(unsafe) private var gestureCommitted = false
 
     @MainActor
-    private func handleScrollDelta(dx: Double, dy: Double, at loc: CGPoint) {
+    private func handleScrollDelta(dx: Double, dy: Double, at loc: CGPoint, dockPID: pid_t = 0) {
         guard settings.enabled else { return }
         // one committed action per physical swipe — re-arms on phase end
         guard !didCommitThisGesture else { return }
-        lastScrollTime = ProcessInfo.processInfo.systemUptime
 
         scrollAcc.dx += dx
         scrollAcc.dy += dy
 
-        // capture target once so mid-gesture cursor drift doesn't switch windows
-        // capture target once so mid-gesture cursor drift doesn't switch windows.
-        // A minimized window can't be hit-tested at the cursor position —
-        // fall back to the window that this gesture chain (or the last down-swipe) owns.
+        // Dock-icon gesture path: vertical swipes map to minimize/restore-all.
+        if dockPID != 0 {
+            let threshold: CGFloat = 90
+            guard abs(scrollAcc.dy) > threshold, abs(scrollAcc.dy) >= abs(scrollAcc.dx) else { return }
+            gestureCommitted = true
+            didCommitThisGesture = true
+            if scrollAcc.dy < 0 {                    // up → restore + activate
+                DockIcon.unminimizeAll(pid: dockPID)
+            } else {                                 // down → minimize all
+                DockIcon.minimizeAll(pid: dockPID)
+            }
+            bezel.show(zone: scrollAcc.dy < 0 ? .maximize : .minimize,
+                       at: NSEvent.mouseLocation)
+            NSHapticFeedbackManager.defaultPerformer.perform(.alignment, performanceTime: .now)
+            scrollAcc = .zero
+            return
+        }
+
+        lastScrollTime = ProcessInfo.processInfo.systemUptime
+
+        // capture target once so mid-gesture cursor drift doesn't switch windows;
+        // a minimized window can't be hit-tested — fall back to the tracked one.
         if scrollWindow == nil {
             scrollWindow = lastMinimizedWindow ?? WindowControl.windowAtPoint(loc)
             scrollScreen = screenContaining(loc)
@@ -269,12 +289,19 @@ final class GestureEngine: ObservableObject {
     private var pinchFired = false
 
     @MainActor
-    private func handleMagnify(_ mag: Double, at loc: CGPoint) {
+    private func handleMagnify(_ mag: Double, at loc: CGPoint, dockPID: pid_t = 0) {
         guard settings.enabled else { return }
         magAcc += mag
         guard abs(magAcc) > 0.4 else { return }
         let pinchIn = magAcc < 0
         magAcc = 0
+        if dockPID != 0 {                          // pinch on a Dock icon
+            bezel.show(zone: pinchIn ? .closeApp : .maximize, at: NSEvent.mouseLocation)
+            if pinchIn { DockIcon.terminate(pid: dockPID) }
+            else { DockIcon.unminimizeAll(pid: dockPID) }
+            NSHapticFeedbackManager.defaultPerformer.perform(.alignment, performanceTime: .now)
+            return
+        }
         guard let win = WindowControl.windowAtPoint(loc),
               let screen = screenContaining(loc) else { return }
         applyPinchTo(win, pinchIn: pinchIn, screen: screen)

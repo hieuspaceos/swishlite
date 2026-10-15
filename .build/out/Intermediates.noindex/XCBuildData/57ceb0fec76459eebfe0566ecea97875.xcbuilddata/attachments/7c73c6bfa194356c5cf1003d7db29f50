@@ -26,6 +26,16 @@
     "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Bezel.swiftdeps",
     "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Bezel~partial.swiftmodule"
   },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/DockIcon.swift" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/DockIcon.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/DockIcon.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/DockIcon.dia",
+    "index-unit-output-path" : "/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/DockIcon.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/DockIcon.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/DockIcon.o",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/DockIcon.swiftdeps",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/DockIcon~partial.swiftmodule"
+  },
   "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/GestureEngine.swift" : {
     "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.swiftconstvalues",
     "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.d",
@@ -35,6 +45,16 @@
     "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.o",
     "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine.swiftdeps",
     "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/GestureEngine~partial.swiftmodule"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/Multitouch.swift" : {
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Multitouch.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Multitouch.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Multitouch.dia",
+    "index-unit-output-path" : "/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Multitouch.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Multitouch.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Multitouch.o",
+    "swift-dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Multitouch.swiftdeps",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Multitouch~partial.swiftmodule"
   },
   "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/Permissions.swift" : {
     "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Debug/SwishLite-p.build/Objects-normal/arm64/Permissions.swiftconstvalues",

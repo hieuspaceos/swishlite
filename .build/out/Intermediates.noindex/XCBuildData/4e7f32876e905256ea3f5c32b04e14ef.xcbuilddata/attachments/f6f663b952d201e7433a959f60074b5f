@@ -18,10 +18,20 @@
     "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Bezel.bc",
     "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Bezel.o"
   },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/DockIcon.swift" : {
+    "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/DockIcon.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/DockIcon.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/DockIcon.o"
+  },
   "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/GestureEngine.swift" : {
     "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/GestureEngine.o",
     "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/GestureEngine.bc",
     "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/GestureEngine.o"
+  },
+  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/Multitouch.swift" : {
+    "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Multitouch.o",
+    "llvm-bc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Multitouch.bc",
+    "object" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Multitouch.o"
   },
   "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/Permissions.swift" : {
     "index-unit-output-path" : "/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/Permissions.o",

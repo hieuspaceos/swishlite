@@ -26,7 +26,7 @@ final class Bezel {
                          defer: false)
         w.isOpaque = false
         w.backgroundColor = .clear
-        w.level = .floating
+        w.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.screenSaverWindow)))
         w.ignoresMouseEvents = true
         w.hasShadow = false
         w.collectionBehavior = [.canJoinAllSpaces, .stationary]
