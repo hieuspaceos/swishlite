@@ -138,6 +138,7 @@ final class GestureEngine: ObservableObject {
             // momentum (coasting after fingers lifted) is never part of the swipe
             guard momentum == 0 else { return Unmanaged.passUnretained(event) }
             if phase == 4 || phase == 8 {
+                scrollProbeHit = nil
                 DispatchQueue.main.async { [weak self] in self?.endScrollGesture() }
                 return gestureCommitted ? nil : Unmanaged.passUnretained(event)
             }
@@ -147,15 +148,22 @@ final class GestureEngine: ObservableObject {
             // so a physical finger swipe maps to the same direction everywhere
 
             var inv = false
-            if let ev = NSEvent(cgEvent: event) { inv = ev.isDirectionInvertedFromDevice }
-            let fx = inv ? dx : -dx
-            let fy = inv ? dy : -dy
-            // Allow through when a tracked minimized window exists: its frame is in
-            // the Dock so a plain titlebar hit-test would wrongly drop the event.
-            let dockItem = DockIcon.dockItemAt(loc)
-            let onTitleBar = dockItem != nil || lastMinimizedWindow != nil || Self.pointOnAnyTitleBar(loc)
+            // Hit-test once per gesture (phase 1 = began): the swipe is
+            // anchored to where it started — re-testing per 125Hz event is a
+            // synchronous AX IPC chain on the tap thread and risks
+            // tapDisabledByTimeout.
+            if phase == 1 { scrollProbeHit = nil }
+            if scrollProbeHit == nil {
+                let dockItem = DockIcon.dockItemAt(loc)
+                let hit = dockItem != nil || lastMinimizedWindow != nil
+                          || Self.pointOnAnyTitleBar(loc)
+                scrollProbeHit = (hit, dockItem?.pid ?? 0)
+            }
+            let (onTitleBar, dockPID) = scrollProbeHit!
             if onTitleBar && (dx != 0 || dy != 0) {
-                let dockPID = dockItem?.pid ?? 0
+                if let ev = NSEvent(cgEvent: event) { inv = ev.isDirectionInvertedFromDevice }
+                let fx = inv ? dx : -dx
+                let fy = inv ? dy : -dy
                 DispatchQueue.main.async { [weak self] in
                     self?.handleScrollDelta(dx: fx, dy: fy, at: loc, dockPID: dockPID)
                 }
@@ -206,6 +214,9 @@ final class GestureEngine: ObservableObject {
     private var scrollScreen: NSScreen?
     /// true while a snap gesture is in progress — tap consumes scroll events then
     nonisolated(unsafe) private var gestureCommitted = false
+    /// Per-scroll-gesture hit-test cache — cleared on phase 1 (began).
+    /// Read/written on the event-tap thread only.
+    nonisolated(unsafe) private var scrollProbeHit: (Bool, pid_t)?
 
     @MainActor
     private func handleScrollDelta(dx: Double, dy: Double, at loc: CGPoint, dockPID: pid_t = 0) {
@@ -412,20 +423,28 @@ final class GestureEngine: ObservableObject {
         guard settings.enabled, settings.dragToUnsnap else { return }
         guard let ax = Self.axPoint(NSEvent.mouseLocation) else { return }
         if !dragging {
+            // Probe once per drag session: leftMouseDragged fires for every
+            // drag in every app — only the first event after mouse-down should
+            // pay for the AX IPC lookup.
+            guard !dragProbed else { return }
+            dragProbed = true
             guard let win = WindowControl.windowAtPoint(ax),
                   WindowControl.isOnTitleBar(ax, window: win),
                   let f = WindowControl.frame(of: win) else { return }
-            dragWindow = win; dragOrigin = ax; windowOrigin = f.origin; dragging = true
+            dragWindow = win; dragOrigin = ax; windowOrigin = f.origin
+            dragWindowSize = f.size; dragging = true
         }
         guard let win = dragWindow else { return }
-        var nf = CGRect(origin: CGPoint(
+        let nf = CGRect(origin: CGPoint(
             x: windowOrigin.x + (ax.x - dragOrigin.x),
-            y: windowOrigin.y + (ax.y - dragOrigin.y)), size: .zero)
-        if let cur = WindowControl.frame(of: win) { nf.size = cur.size }
+            y: windowOrigin.y + (ax.y - dragOrigin.y)), size: dragWindowSize)
         WindowControl.setFrame(win, nf, animate: 0)
     }
 
-    private func endDrag() { dragging = false; dragWindow = nil }
+    private var dragProbed = false
+    private var dragWindowSize = CGSize.zero
+
+    private func endDrag() { dragging = false; dragWindow = nil; dragProbed = false }
 
     // MARK: - Apply zones (AX coords, y-down from primary screen top)
 

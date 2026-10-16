@@ -31,7 +31,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
             win.styleMask = [.titled, .closable, .miniaturizable]
             win.setContentSize(NSSize(width: 780, height: 560))
             win.center()
-            win.isReleasedWhenClosed = false
+            win.isReleasedWhenClosed = true
             win.delegate = self
             settingsWindow = win
         }
@@ -45,6 +45,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     func windowWillClose(_ notification: Notification) {
         if notification.object as? NSWindow === settingsWindow {
+            settingsWindow = nil          // release the SwiftUI graph
             NSApp.setActivationPolicy(.accessory)
         }
     }

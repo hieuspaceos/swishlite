@@ -71,15 +71,32 @@ final class Multitouch: @unchecked Sendable {
         computePinch()
     }
 
+    // Main-hop coalescing: deltas accumulate on the callback thread and flush
+    // once per pending Task instead of allocating one Task per contact frame
+    // (touch reports arrive at ~125Hz).
+    private var pendingDelta = 0.0
+    private var hopPending = false
+
     private func computePinch() {
         guard live.count == 2 else { lastSpan = 0; return }
-        let pts = Array(live.values)
-        let span = Float(hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y))
+        // Two contacts only — read them without allocating an Array.
+        var it = live.values.makeIterator()
+        guard let a = it.next(), let b = it.next() else { return }
+        let span = Float(hypot(a.x - b.x, a.y - b.y))
         defer { lastSpan = span }
         guard lastSpan > 0 else { return }
         let d = Double(span - lastSpan)
         guard abs(d) > 0.003 else { return }
 
-        Task { @MainActor [weak self] in self?.onPinch?(d) }
+        pendingDelta += d
+        guard !hopPending else { return }
+        hopPending = true
+        Task { @MainActor [weak self] in
+            guard let self else { return }
+            let d = self.pendingDelta
+            self.pendingDelta = 0
+            self.hopPending = false
+            self.onPinch?(d)
+        }
     }
 }
