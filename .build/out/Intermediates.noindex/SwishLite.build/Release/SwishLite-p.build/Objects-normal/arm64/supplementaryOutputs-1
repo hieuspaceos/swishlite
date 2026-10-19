@@ -1,11 +1,11 @@
 {
-  "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite/AppDelegate.swift" : {
-    "abi-baseline-json" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite.abi.json",
-    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.swiftconstvalues",
-    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.d",
-    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.dia",
-    "swiftdoc" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite.swiftdoc",
-    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite.swiftmodule",
-    "swiftsourceinfo" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite.swiftsourceinfo"
+  "/Users/hieuspace/Desktop/CODE/pet/swishlite/Sources/SwishLite/AppDelegate.swift" : {
+    "abi-baseline-json" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite.abi.json",
+    "const-values" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.swiftconstvalues",
+    "dependencies" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.d",
+    "diagnostics" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite-primary.dia",
+    "swiftdoc" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite.swiftdoc",
+    "swiftmodule" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite.swiftmodule",
+    "swiftsourceinfo" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/.build/out/Intermediates.noindex/SwishLite.build/Release/SwishLite-p.build/Objects-normal/arm64/SwishLite.swiftsourceinfo"
   }
 }

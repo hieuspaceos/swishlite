@@ -1,15 +1,15 @@
 [
   {
     "contents" : {
-      "guid" : "Workspace:/Users/hieuspace/Desktop/CODE/pet/swish-clone",
+      "guid" : "Workspace:/Users/hieuspace/Desktop/CODE/pet/swishlite",
       "name" : "SwishLite",
-      "path" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone",
+      "path" : "/Users/hieuspace/Desktop/CODE/pet/swishlite",
       "projects" : [
-        "26b7290584f72863d77ad8eba3430690a9ab8d0baeab1af0b54c7568be4d37ee",
-        "cea3e9eb7ef4a6c3a90548f9abf26689af063de627156f3ecf5e3c7338109543"
+        "049a1bbce6080e4fc756f5a075474810f91e8a821c1d9707007936146f9703a7",
+        "1652d5e42023a4f008ccff6cfb7002b784833007597df73fc57923688ec1e9fd"
       ]
     },
-    "signature" : "a8cffb84c2892e9b36160a8ffe91a9b2be6abd12a4008de8b573e8656835d70c",
+    "signature" : "b8a1bd7cfce9bbfc31956c211273687f4d2236591ee1ce38ffbdc6a44e87317b",
     "type" : "workspace"
   },
   {
@@ -88,7 +88,7 @@
             "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
             "XROS_DEPLOYMENT_TARGET" : "1.0"
           },
-          "guid" : "PACKAGE:swish-clone::BUILDCONFIG_0",
+          "guid" : "PACKAGE:swishlite::BUILDCONFIG_0",
           "impartedBuildProperties" : {
             "buildSettings" : {
 
@@ -164,7 +164,7 @@
             "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
             "XROS_DEPLOYMENT_TARGET" : "1.0"
           },
-          "guid" : "PACKAGE:swish-clone::BUILDCONFIG_1",
+          "guid" : "PACKAGE:swishlite::BUILDCONFIG_1",
           "impartedBuildProperties" : {
             "buildSettings" : {
 
@@ -180,7 +180,7 @@
             "children" : [
 
             ],
-            "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_0",
+            "guid" : "PACKAGE:swishlite::MAINGROUP::REF_0",
             "name" : "AdditionalFiles",
             "path" : "/",
             "sourceTree" : "<absolute>",
@@ -190,7 +190,7 @@
             "children" : [
 
             ],
-            "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_1",
+            "guid" : "PACKAGE:swishlite::MAINGROUP::REF_1",
             "name" : "Binaries",
             "path" : "/",
             "sourceTree" : "<absolute>",
@@ -200,7 +200,7 @@
             "children" : [
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_0",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_0",
                 "name" : "AppDelegate.swift",
                 "path" : "AppDelegate.swift",
                 "sourceTree" : "<group>",
@@ -208,7 +208,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_1",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_1",
                 "name" : "Bezel.swift",
                 "path" : "Bezel.swift",
                 "sourceTree" : "<group>",
@@ -216,7 +216,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_2",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_2",
                 "name" : "DockIcon.swift",
                 "path" : "DockIcon.swift",
                 "sourceTree" : "<group>",
@@ -224,7 +224,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_3",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_3",
                 "name" : "GestureEngine.swift",
                 "path" : "GestureEngine.swift",
                 "sourceTree" : "<group>",
@@ -232,7 +232,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_4",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_4",
                 "name" : "Multitouch.swift",
                 "path" : "Multitouch.swift",
                 "sourceTree" : "<group>",
@@ -240,7 +240,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_5",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_5",
                 "name" : "Permissions.swift",
                 "path" : "Permissions.swift",
                 "sourceTree" : "<group>",
@@ -248,7 +248,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_6",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_6",
                 "name" : "Settings.swift",
                 "path" : "Settings.swift",
                 "sourceTree" : "<group>",
@@ -256,7 +256,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_7",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_7",
                 "name" : "SettingsView.swift",
                 "path" : "SettingsView.swift",
                 "sourceTree" : "<group>",
@@ -264,7 +264,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_8",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_8",
                 "name" : "WindowControl.swift",
                 "path" : "WindowControl.swift",
                 "sourceTree" : "<group>",
@@ -272,16 +272,16 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_9",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_9",
                 "name" : "main.swift",
                 "path" : "main.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_2",
-            "name" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite",
-            "path" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite",
+            "guid" : "PACKAGE:swishlite::MAINGROUP::REF_2",
+            "name" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/Sources/SwishLite",
+            "path" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/Sources/SwishLite",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -289,7 +289,7 @@
             "children" : [
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_0",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_0",
                 "name" : "AppDelegate.swift",
                 "path" : "AppDelegate.swift",
                 "sourceTree" : "<group>",
@@ -297,7 +297,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_1",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_1",
                 "name" : "Bezel.swift",
                 "path" : "Bezel.swift",
                 "sourceTree" : "<group>",
@@ -305,7 +305,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_2",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_2",
                 "name" : "DockIcon.swift",
                 "path" : "DockIcon.swift",
                 "sourceTree" : "<group>",
@@ -313,7 +313,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_3",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_3",
                 "name" : "GestureEngine.swift",
                 "path" : "GestureEngine.swift",
                 "sourceTree" : "<group>",
@@ -321,7 +321,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_4",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_4",
                 "name" : "Multitouch.swift",
                 "path" : "Multitouch.swift",
                 "sourceTree" : "<group>",
@@ -329,7 +329,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_5",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_5",
                 "name" : "Permissions.swift",
                 "path" : "Permissions.swift",
                 "sourceTree" : "<group>",
@@ -337,7 +337,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_6",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_6",
                 "name" : "Settings.swift",
                 "path" : "Settings.swift",
                 "sourceTree" : "<group>",
@@ -345,7 +345,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_7",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_7",
                 "name" : "SettingsView.swift",
                 "path" : "SettingsView.swift",
                 "sourceTree" : "<group>",
@@ -353,7 +353,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_8",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_8",
                 "name" : "WindowControl.swift",
                 "path" : "WindowControl.swift",
                 "sourceTree" : "<group>",
@@ -361,38 +361,38 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_9",
+                "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_9",
                 "name" : "main.swift",
                 "path" : "main.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:swish-clone::MAINGROUP::REF_3",
-            "name" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite",
-            "path" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Sources/SwishLite",
+            "guid" : "PACKAGE:swishlite::MAINGROUP::REF_3",
+            "name" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/Sources/SwishLite",
+            "path" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/Sources/SwishLite",
             "sourceTree" : "<absolute>",
             "type" : "group"
           }
         ],
-        "guid" : "PACKAGE:swish-clone::MAINGROUP",
+        "guid" : "PACKAGE:swishlite::MAINGROUP",
         "name" : "",
         "path" : "",
         "sourceTree" : "<group>",
         "type" : "group"
       },
-      "guid" : "PACKAGE:swish-clone",
-      "path" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Package.swift",
-      "projectDirectory" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone",
+      "guid" : "PACKAGE:swishlite",
+      "path" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/Package.swift",
+      "projectDirectory" : "/Users/hieuspace/Desktop/CODE/pet/swishlite",
       "projectIsPackage" : "true",
       "projectName" : "SwishLite",
       "targets" : [
-        "350c7bdcb367c24ff1729742bb549347304605be39b62de3e6223bd5a5e7c731",
-        "70a54a25d4a5180721e5d693320f7cf866b6c60b2a0e60ecd15e554c38c24f18",
-        "a058db832a86c4250de50d41b249eab385095b98a25267232f970faac9f45d82"
+        "831090539e98095a60ceaf6b3ed270d7b22813dbca85fc81af2b3cc54a6c8b39",
+        "5a41823e3709dd3e5e31c782338a93b5c36d357e888f8a10bf994a605c33032e",
+        "c870664898bbc00a68937c0173effed91b12163c1481459fffcdcf5fa1408984"
       ]
     },
-    "signature" : "26b7290584f72863d77ad8eba3430690a9ab8d0baeab1af0b54c7568be4d37ee",
+    "signature" : "049a1bbce6080e4fc756f5a075474810f91e8a821c1d9707007936146f9703a7",
     "type" : "project"
   },
   {
@@ -427,7 +427,7 @@
               "SwishLite_main"
             ],
             "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
-            "PRODUCT_BUNDLE_IDENTIFIER" : "swish-clone.SwishLite",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "swishlite.SwishLite",
             "PRODUCT_MODULE_NAME" : "SwishLite",
             "PRODUCT_NAME" : "$(TARGET_NAME)",
             "SDKROOT" : "auto",
@@ -436,7 +436,7 @@
             "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
             "SWIFT_INSTALL_MODULE" : "NO",
             "SWIFT_LIBRARIES_ONLY" : "NO",
-            "SWIFT_PACKAGE_NAME" : "swish_clone",
+            "SWIFT_PACKAGE_NAME" : "swishlite",
             "SWIFT_VERSION" : "6",
             "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/SwishLite.symbolgraphs",
             "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/SwishLite.symbolgraphs",
@@ -446,7 +446,7 @@
             "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
             "XROS_DEPLOYMENT_TARGET" : "1.0"
           },
-          "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDCONFIG_0",
+          "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDCONFIG_0",
           "impartedBuildProperties" : {
             "buildSettings" : {
 
@@ -482,7 +482,7 @@
               "SwishLite_main"
             ],
             "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
-            "PRODUCT_BUNDLE_IDENTIFIER" : "swish-clone.SwishLite",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "swishlite.SwishLite",
             "PRODUCT_MODULE_NAME" : "SwishLite",
             "PRODUCT_NAME" : "$(TARGET_NAME)",
             "SDKROOT" : "auto",
@@ -491,7 +491,7 @@
             "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
             "SWIFT_INSTALL_MODULE" : "NO",
             "SWIFT_LIBRARIES_ONLY" : "NO",
-            "SWIFT_PACKAGE_NAME" : "swish_clone",
+            "SWIFT_PACKAGE_NAME" : "swishlite",
             "SWIFT_VERSION" : "6",
             "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/SwishLite.symbolgraphs",
             "TAPI_EXTRACT_API_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/SwishLite.symbolgraphs",
@@ -501,7 +501,7 @@
             "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
             "XROS_DEPLOYMENT_TARGET" : "1.0"
           },
-          "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDCONFIG_1",
+          "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDCONFIG_1",
           "impartedBuildProperties" : {
             "buildSettings" : {
 
@@ -515,8 +515,8 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_0",
-              "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0::0",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_0",
+              "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0::0",
               "platformFilters" : [
 
               ],
@@ -524,8 +524,8 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_1",
-              "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0::1",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_1",
+              "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0::1",
               "platformFilters" : [
 
               ],
@@ -533,8 +533,8 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_2",
-              "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0::2",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_2",
+              "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0::2",
               "platformFilters" : [
 
               ],
@@ -542,8 +542,8 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_3",
-              "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0::3",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_3",
+              "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0::3",
               "platformFilters" : [
 
               ],
@@ -551,8 +551,8 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_4",
-              "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0::4",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_4",
+              "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0::4",
               "platformFilters" : [
 
               ],
@@ -560,8 +560,8 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_5",
-              "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0::5",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_5",
+              "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0::5",
               "platformFilters" : [
 
               ],
@@ -569,8 +569,8 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_6",
-              "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0::6",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_6",
+              "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0::6",
               "platformFilters" : [
 
               ],
@@ -578,8 +578,8 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_7",
-              "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0::7",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_7",
+              "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0::7",
               "platformFilters" : [
 
               ],
@@ -587,8 +587,8 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_8",
-              "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0::8",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_8",
+              "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0::8",
               "platformFilters" : [
 
               ],
@@ -596,15 +596,15 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_2::REF_9",
-              "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0::9",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_2::REF_9",
+              "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0::9",
               "platformFilters" : [
 
               ],
               "removeHeadersOnCopy" : "false"
             }
           ],
-          "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite::BUILDPHASE_0",
+          "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite::BUILDPHASE_0",
           "type" : "com.apple.buildphase.sources"
         }
       ],
@@ -617,17 +617,17 @@
       "dependencies" : [
 
       ],
-      "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite",
+      "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite",
       "name" : "SwishLite-product",
       "productReference" : {
-        "guid" : "PRODUCTREF-PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite",
+        "guid" : "PRODUCTREF-PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite",
         "name" : "$(EXECUTABLE_NAME)",
         "type" : "file"
       },
       "productTypeIdentifier" : "com.apple.product-type.tool",
       "type" : "standard"
     },
-    "signature" : "350c7bdcb367c24ff1729742bb549347304605be39b62de3e6223bd5a5e7c731",
+    "signature" : "831090539e98095a60ceaf6b3ed270d7b22813dbca85fc81af2b3cc54a6c8b39",
     "type" : "target"
   },
   {
@@ -659,7 +659,7 @@
               "SwishLite_main"
             ],
             "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
-            "PRODUCT_BUNDLE_IDENTIFIER" : "swish-clone.SwishLite",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "swishlite.SwishLite",
             "PRODUCT_MODULE_NAME" : "SwishLite",
             "PRODUCT_NAME" : "$(TARGET_NAME)",
             "SDKROOT" : "auto",
@@ -671,7 +671,7 @@
             "SWIFT_LIBRARIES_ONLY" : "NO",
             "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
             "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "SwishLite-Swift.h",
-            "SWIFT_PACKAGE_NAME" : "swish_clone",
+            "SWIFT_PACKAGE_NAME" : "swishlite",
             "SWIFT_VERSION" : "6",
             "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/SwishLite.symbolgraphs",
             "TAPI_DYLIB_INSTALL_NAME" : "SwishLite",
@@ -738,7 +738,7 @@
               "SwishLite_main"
             ],
             "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
-            "PRODUCT_BUNDLE_IDENTIFIER" : "swish-clone.SwishLite",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "swishlite.SwishLite",
             "PRODUCT_MODULE_NAME" : "SwishLite",
             "PRODUCT_NAME" : "$(TARGET_NAME)",
             "SDKROOT" : "auto",
@@ -750,7 +750,7 @@
             "SWIFT_LIBRARIES_ONLY" : "NO",
             "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
             "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "SwishLite-Swift.h",
-            "SWIFT_PACKAGE_NAME" : "swish_clone",
+            "SWIFT_PACKAGE_NAME" : "swishlite",
             "SWIFT_VERSION" : "6",
             "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/SwishLite.symbolgraphs",
             "TAPI_DYLIB_INSTALL_NAME" : "SwishLite",
@@ -797,7 +797,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_0",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_0",
               "guid" : "PACKAGE-TARGET:SwishLite--5E597D0DC71B095B-testable::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -806,7 +806,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_1",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_1",
               "guid" : "PACKAGE-TARGET:SwishLite--5E597D0DC71B095B-testable::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -815,7 +815,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_2",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_2",
               "guid" : "PACKAGE-TARGET:SwishLite--5E597D0DC71B095B-testable::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -824,7 +824,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_3",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_3",
               "guid" : "PACKAGE-TARGET:SwishLite--5E597D0DC71B095B-testable::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -833,7 +833,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_4",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_4",
               "guid" : "PACKAGE-TARGET:SwishLite--5E597D0DC71B095B-testable::BUILDPHASE_0::4",
               "platformFilters" : [
 
@@ -842,7 +842,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_5",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_5",
               "guid" : "PACKAGE-TARGET:SwishLite--5E597D0DC71B095B-testable::BUILDPHASE_0::5",
               "platformFilters" : [
 
@@ -851,7 +851,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_6",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_6",
               "guid" : "PACKAGE-TARGET:SwishLite--5E597D0DC71B095B-testable::BUILDPHASE_0::6",
               "platformFilters" : [
 
@@ -860,7 +860,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_7",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_7",
               "guid" : "PACKAGE-TARGET:SwishLite--5E597D0DC71B095B-testable::BUILDPHASE_0::7",
               "platformFilters" : [
 
@@ -869,7 +869,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_8",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_8",
               "guid" : "PACKAGE-TARGET:SwishLite--5E597D0DC71B095B-testable::BUILDPHASE_0::8",
               "platformFilters" : [
 
@@ -878,7 +878,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:swish-clone::MAINGROUP::REF_3::REF_9",
+              "fileReference" : "PACKAGE:swishlite::MAINGROUP::REF_3::REF_9",
               "guid" : "PACKAGE-TARGET:SwishLite--5E597D0DC71B095B-testable::BUILDPHASE_0::9",
               "platformFilters" : [
 
@@ -909,7 +909,7 @@
       "productTypeIdentifier" : "org.swift.product-type.common.object",
       "type" : "standard"
     },
-    "signature" : "70a54a25d4a5180721e5d693320f7cf866b6c60b2a0e60ecd15e554c38c24f18",
+    "signature" : "5a41823e3709dd3e5e31c782338a93b5c36d357e888f8a10bf994a605c33032e",
     "type" : "target"
   },
   {
@@ -919,7 +919,7 @@
           "buildSettings" : {
 
           },
-          "guid" : "PACKAGE-PRODUCT:swish-clone-SwishLitePackageTests.SwishLitePackageTests::BUILDCONFIG_0",
+          "guid" : "PACKAGE-PRODUCT:swishlite-SwishLitePackageTests.SwishLitePackageTests::BUILDCONFIG_0",
           "impartedBuildProperties" : {
             "buildSettings" : {
 
@@ -931,7 +931,7 @@
           "buildSettings" : {
 
           },
-          "guid" : "PACKAGE-PRODUCT:swish-clone-SwishLitePackageTests.SwishLitePackageTests::BUILDCONFIG_1",
+          "guid" : "PACKAGE-PRODUCT:swishlite-SwishLitePackageTests.SwishLitePackageTests::BUILDCONFIG_1",
           "impartedBuildProperties" : {
             "buildSettings" : {
 
@@ -952,11 +952,11 @@
       "dependencies" : [
 
       ],
-      "guid" : "PACKAGE-PRODUCT:swish-clone-SwishLitePackageTests.SwishLitePackageTests",
+      "guid" : "PACKAGE-PRODUCT:swishlite-SwishLitePackageTests.SwishLitePackageTests",
       "name" : "SwishLitePackageTests-product",
       "type" : "aggregate"
     },
-    "signature" : "a058db832a86c4250de50d41b249eab385095b98a25267232f970faac9f45d82",
+    "signature" : "c870664898bbc00a68937c0173effed91b12163c1481459fffcdcf5fa1408984",
     "type" : "target"
   },
   {
@@ -1012,16 +1012,16 @@
         "type" : "group"
       },
       "guid" : "AGGREGATE",
-      "path" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone/Package.swift",
-      "projectDirectory" : "/Users/hieuspace/Desktop/CODE/pet/swish-clone",
+      "path" : "/Users/hieuspace/Desktop/CODE/pet/swishlite/Package.swift",
+      "projectDirectory" : "/Users/hieuspace/Desktop/CODE/pet/swishlite",
       "projectIsPackage" : "true",
       "projectName" : "Aggregate",
       "targets" : [
-        "bb547286f16d998124b836adb7bf6ea64316e746b07e2e834d48c305c9ff3f6d",
-        "5b57e3ae94f2d5fd1359d4102bcb71bf2564242bdf83f8f0a78adc4a584c78c8"
+        "ce287f71cb862c7a752495f39921ce70a0f1444d9e072ae17ed2fc759f55534c",
+        "7afad44361d1586bcb72fa4a0fa419b680974a353be63434cf964c057d844b5e"
       ]
     },
-    "signature" : "cea3e9eb7ef4a6c3a90548f9abf26689af063de627156f3ecf5e3c7338109543",
+    "signature" : "1652d5e42023a4f008ccff6cfb7002b784833007597df73fc57923688ec1e9fd",
     "type" : "project"
   },
   {
@@ -1063,7 +1063,7 @@
       ],
       "dependencies" : [
         {
-          "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite",
+          "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite",
           "platformFilters" : [
 
           ]
@@ -1073,7 +1073,7 @@
       "name" : "AllIncludingTests",
       "type" : "aggregate"
     },
-    "signature" : "bb547286f16d998124b836adb7bf6ea64316e746b07e2e834d48c305c9ff3f6d",
+    "signature" : "ce287f71cb862c7a752495f39921ce70a0f1444d9e072ae17ed2fc759f55534c",
     "type" : "target"
   },
   {
@@ -1115,7 +1115,7 @@
       ],
       "dependencies" : [
         {
-          "guid" : "PACKAGE-PRODUCT:swish-clone_SwishLite.SwishLite",
+          "guid" : "PACKAGE-PRODUCT:swishlite_SwishLite.SwishLite",
           "platformFilters" : [
 
           ]
@@ -1125,7 +1125,7 @@
       "name" : "AllExcludingTests",
       "type" : "aggregate"
     },
-    "signature" : "5b57e3ae94f2d5fd1359d4102bcb71bf2564242bdf83f8f0a78adc4a584c78c8",
+    "signature" : "7afad44361d1586bcb72fa4a0fa419b680974a353be63434cf964c057d844b5e",
     "type" : "target"
   }
 ]

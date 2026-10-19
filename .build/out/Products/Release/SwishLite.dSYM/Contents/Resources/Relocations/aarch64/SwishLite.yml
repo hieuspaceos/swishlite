@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/hieuspace/Desktop/CODE/pet/swish-clone/.build/out/Products/Release/SwishLite'
+binary-path:     '/Users/hieuspace/Desktop/CODE/pet/swishlite/.build/out/Products/Release/SwishLite'
 relocations:
   - { offset: 0xC13C6, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100001820, symSize: 0x70 }
   - { offset: 0xC13FA, size: 0x8, addend: 0x0, symName: '_$s7SwiftUI14_TaskModifier2VAcA12ViewModifierAAWl', symObjAddr: 0x190, symBinAddr: 0x1000019B0, symSize: 0x44 }

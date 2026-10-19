@@ -7,7 +7,7 @@
   {
     "isFramework" : true,
     "moduleName" : "AppKit",
-    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/macosx\/prebuilt-modules\/27.0\/AppKit.swiftmodule\/arm64e-apple-macos.swiftmodule"
+    "modulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-2S9TKTZ94BW1N.swiftmodule"
   },
   {
     "isFramework" : true,
@@ -137,12 +137,12 @@
   {
     "isFramework" : true,
     "moduleName" : "SwiftUI",
-    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/macosx\/prebuilt-modules\/27.0\/SwiftUI.swiftmodule\/arm64e-apple-macos.swiftmodule"
+    "modulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUI-NTLSROBX19FR.swiftmodule"
   },
   {
     "isFramework" : true,
     "moduleName" : "SwiftUICore",
-    "modulePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/swift\/macosx\/prebuilt-modules\/27.0\/SwiftUICore.swiftmodule\/arm64e-apple-macos.swiftmodule"
+    "modulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-2BCDTYUTPABAG.swiftmodule"
   },
   {
     "isFramework" : true,
@@ -211,476 +211,476 @@
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-630KCPWZG0V8XMVSRFTUIHNN1.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/Accessibility-B21QQBKDG6N18I4Y4YGTSZUP1.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Accessibility"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/AppKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-22DC913I5DFYH9IMJ2ONO8CKX.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/AppKit-55VR1TAY2UGV8MZS2BPJFSUHS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "AppKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/ApplicationServices.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/ApplicationServices-3P6QNCHO0ZRNX1GBIO60IK6JA.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/ApplicationServices-CP65BSRGB72J3RCEGUX2EI0JE.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ApplicationServices"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CFNetwork.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CFNetwork-2QQUPAZ3HY5BVFPAPLHE2589P.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CFNetwork-8AUHMFXP69AM25EBE7LABD06F.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CFNetwork"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/cups.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CUPS-3YZ7IUIST5IF45K1Q70698N9J.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CUPS-BV0GO0VTFJUX2QZL4L6Z5AK1Q.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CUPS"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Cocoa.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/Cocoa-6Q08EZ5Q8BLLJA69XATP4QVHL.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/Cocoa-30HYLEC2Q3VAL9KP047W6VBRS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Cocoa"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/ColorSync.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-5ODT9VLHGKH3WI0TP6MRQ5SQS.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/ColorSync-837JV3CTJDG8I2HTZOX3CG97R.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ColorSync"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreAudio.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudio-AMH64HN621UCHLIPW2M9K91F2.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudio-5FSK1XHUEWV7A3CVESI8FP7XW.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreAudio"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreAudioTypes.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudioTypes-3MPPXBPIXT3Z61CCPAK4YFQ6B.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreAudioTypes-E5LGTM2D5ZCJHEI1VXXTUU47Q.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreAudioTypes"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-4DLLAMS6MQ711HLBJC7011M3.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreData-5FJQKW6470VCHJH231SLUJRKV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreData"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-577A0BE56KDAYC4R2YACWRQ1.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreFoundation-55UZ7U3WSFFFWKD1H1GNIB0KE.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreFoundation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-8A9ZBW643HKYOV7A5NI6KA96S.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreGraphics-6YZ8Q8PO65DUTUNC62K7CWFRE.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreGraphics"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreImage.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-6UE3L729NUYC1NPSDA9OEW2WW.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreImage-4WO6CCQK9I7NIEQXOKUSCY8EI.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreImage"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreMedia.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreMedia-4C138I5V88QQZ4YWMK47XYLIV.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreMedia-198QHLXLCGEVYAXZFM3BPLJLS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreMedia"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreServices.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreServices-OQ8R548ZCELYZO9ZD4OZ9CXV.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreServices-3L9F5QXIC2W2DLNGG3C0MKKBJ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreServices"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-8A78MYCD0S7CNY3XGUN7WX3D2.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreText-4JER4YEVHS9TSDLCA4O9TXU40.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreText"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-4HEDR02SYZX0GUOQ6JC4W2706.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreTransferable-84BLRD3AJ2SE2WN26CP12Q8Y7.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreTransferable"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-A0OERD6GHAIFS5QSAITHJ2R40.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/CoreVideo-2U0JQ3IOWENT0IZU1PIOO72D2.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreVideo"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/Darwin.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-D8ZZ5UUMJPAOLI6O8TJDBAQ36.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/Darwin-BEIM1A2L8EL5QAS6VUTOUP1UV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Darwin"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-19MGXIL0TSCC3Z59GTHZRXZWL.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/DataDetection-6CTA823IJ09LMIF2NMMZS5LUZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DataDetection"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-CPRQN7WI7FOJLYLRWQ2PZCDRR.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/DeveloperToolsSupport-BAUJPA4HL1EMUS73YA61FZ8WJ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DeveloperToolsSupport"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/DiskArbitration.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/DiskArbitration-DTFU5YSFOT1JSOME9PIJ1VQRN.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/DiskArbitration-A2B2SCX7SKK1ZBZZ9O43N9MEF.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DiskArbitration"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/dispatch.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-XNZZSNP6B7C8F483UBPAMUSM.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/Dispatch-BOYZM53UDISXDXVREUPAJXCMW.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Dispatch"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-BVADZI2GHIR3Y3VI3JC4JPEBR.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/Foundation-1YKDHOO5G7JUXCQ5RPEZ2PQX7.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Foundation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/IOKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-CJXQOIJQV2C85ME76I8EPCGNM.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/IOKit-CMYK5QESJ0N6LE32CW5LTF9CZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "IOKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/IOSurface.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/IOSurface-AYM2ZA8CY311MH7FQLEFQYJAX.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/IOSurface-8MXPJQPTL371I0U3OVYALNDME.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "IOSurface"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/ImageIO.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-A2F7DNJ9NSNICXUOSL9CUG76B.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/ImageIO-75PNS5819HJNCAJ5TK8VFEAV9.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ImageIO"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinBasic.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/MachO-1BBOXIZ7A19OVEVD3V0O8SQP6.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/MachO-1072HH5QPU8JKLQADUA49JMBR.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "MachO"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Metal.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-BXEQMH55H7O6756W0CMIL8M4F.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/Metal-9KUCIN141YULFUYSC4X5OMLF.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Metal"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-9EQ35I3WZ3VCJYVU8JP7G77G7.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/OSLog-9N3EXJHVY5HO4ZRKP66C37FU2.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OSLog"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/ObjectiveC.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-8S19O3DG9FCO901YX5BLHQAUD.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/ObjectiveC-CKKGAWLOC4IKLRR0MZL952O16.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ObjectiveC"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/OpenGL.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/OpenGL-CWKKEMRAD53WRB6V2L4IUNKM6.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/OpenGL-DOWQ2YA4CP9O0AWTB9ASCHXGM.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OpenGL"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-4BV4T3BMFK434MGM2D84YUBQS.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/QuartzCore-AHHUF2W273XCMPKR4YI0NRJB3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "QuartzCore"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/Security-DKMURFGAJZLWVPR93M1W2012T.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/Security-857QKAFT91O9859HH2TGYTW51.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Security"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/ServiceManagement.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/ServiceManagement-9Q8PVF3ZIQXDGWX6JVQR3AY3A.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/ServiceManagement-C8IY912U60IGZ3FJ0T3A48GAT.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ServiceManagement"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/Spatial\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-6NAA0WJGY5N0AUZKYB6SUX9L8.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/Spatial-BLAGYUU88FXFKNE7X2JF2JBRQ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Spatial"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftShims-4INQOR2Y1CQRQ2B7E6YQN9KZ1.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftShims-9UD64UGJZX8UNTBN6X9GRIRK7.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftShims"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/SwiftUI.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUI-2XC1I8F8PR3Q9MI035RSQN3NB.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUI-BELP9K78SKEHJZDZ6Y5XTLYE9.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUI"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-9X6VRVP0QVSJ7JGIBY7F02QIE.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/SwiftUICore-18UA0M8ZRTBPGK3QNQD3XPSAX.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUICore"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-77LXCA7EQXCFWPHX7AHI044FU.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/Symbols-EVPO5V6BRJU318V0NNIP7NLJ5.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Symbols"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-BGJ8PFJOJ4R1W5H2RFXOLEUWP.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/UniformTypeIdentifiers-1NFYWG1JAYUQQBR6PMBM361PI.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UniformTypeIdentifiers"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/xpc.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-DKR01EBQ8W70KSC9N75OHJ73X.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/XPC-29JH3N3RT6L9NTGEDW8OAENVD.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "XPC"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_AvailabilityInternal-AVHZ8SFSGXISWNEVRV19VVXE.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_AvailabilityInternal-BUPQDDQ39TRMK7LPEH8JPEYDF.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_AvailabilityInternal"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-WN9EOVK4V4XMKNWDC1X88IO8.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_float-BYFEVFNLEIVUU44EACOFNPEDW.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_float"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_intrinsics-91XIQVF6NPB9W57QX9BHRNH4T.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_intrinsics-EJE3794RJEGPCCN1QJAT1LNY5.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_intrinsics"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_inttypes-9ZDP6CJ85YZECXYD8E92S9FCK.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_inttypes-3T2PH3PE3J798HUSIGA8TU87J.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_inttypes"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_limits-CJLUEH1QTI6X42AH6XJVFILRI.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_limits-3AL59SE7HPP2D8N5GPZFWVI8H.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_limits"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdarg-675ELZX8LEERUSNR1C0LXFABF.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdarg-59D2GVI7PM9MFELSNP7SZBAQV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdarg"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdatomic-39M0KAC6L5CI492321NS5IRTO.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdatomic-CXU5YLF9IT3YZEG639K2GT10F.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdatomic"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdbool-1WA29TL3ZX7F79IBC9LXJUIVT.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdbool-B42SL9ZCPPJXSYW71HWBQ8ZP2.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdbool"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stddef-3TTRM7MYQP0PZYTE33T1JTNOB.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stddef-6O1903W2Q5UTAD9HZNRV3JQIL.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stddef"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdint-1UN5SEP7U23ZUY0OXRAX72AVK.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_stdint-EJY8YKSPKYNRM5PXWY2HBCAXS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdint"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_tgmath-7UH3Q71Z872EIOIWTLDEPI1X0.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_Builtin_tgmath-6CLWJRQDG4MKBO2K1XQ4SNUBQ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_tgmath"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-CGB76D1FYRL64T2NC3NBKTDW0.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation1-9UQUTDEKU51M7W13WE4N8V58A.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation1"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-5WR9JJ8E7LEP0T9KHWFD0L6TW.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation2-7SSITNIGZF1F91G9NKJAVMQNZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation2"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation3.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-BPE20UUUUOBMOQV29VM4E8HMR.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_DarwinFoundation3-BCJRUVWWG52GBNZBFYIXQKXP0.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation3"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/_SwiftConcurrencyShims-9M01CLNMMOP79O6ITCYREIT3I.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/_SwiftConcurrencyShims-BWJYJRNK8WRWEB0JPYCPSIFR1.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_SwiftConcurrencyShims"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/launch.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/launch-7IQSPAYLYTFM9M0AN5H25LYQQ.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/launch-1N0H2VVM2ATAPMMEEL9EDWF6W.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "launch"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/libDER\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/libDER-6W2V3T1EKH059JLKZT5WFUCKI.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/libDER-6U91GW3H1HEZSBBCJRM4ZBU9S.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "libDER"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/libkern.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/libkern-8XLXHDYO6M0C1F2ZWF7GO0S8K.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/libkern-B6GE4IO8K3W97AQSZVPFQ4P5Q.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "libkern"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/os-9D00NTH0E1MG45133J07GLIH9.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/os-BTIF1FS4ML8ONTYRFWFLMDDQX.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/os_object-BW2R2SXRFKOGO4ZRPBXLSB1EZ.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/os_object-4MX8CFX8QZPZA2FDNAG6SQN86.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_object"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/os_workgroup-5IWMSOAST8H9IWEMA75IMT7I.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/os_workgroup-9EY8PFZZJOJWJ7YE1J8J2XBEZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_workgroup"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/ptrauth-ACUT1V7XGMPN1DHFU7RQ9TEB.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/ptrauth-BIPDZ3AQ70256UVFNDTF5HOIY.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrauth"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/ptrcheck-7FYNRFNBBWNWR5H1O0YXZIVBE.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/ptrcheck-B9X3ZXYF15J2XLTUJOTFECKF3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrcheck"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/simd\/module.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/simd-1Q9T8ISSWDV5V6KSDYNESC3ZD.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/simd-C53BTE33M8NDWE5U0I70R847U.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "simd"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/c_standard_library.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/string_h-EYGU2RIX5ZUCP738KI55IG063.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/string_h-AX8686MKXS39KJ6S1IXRXOEF8.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "string_h"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swish-clone\/.build\/out\/SDKExplicitPrecompiledModules\/sys_types-4VTXP32WXTNU046L4PP14GAX7.pcm",
+    "clangModulePath" : "\/Users\/hieuspace\/Desktop\/CODE\/pet\/swishlite\/.build\/out\/SDKExplicitPrecompiledModules\/sys_types-G7C0UQFOISVR7WZ8PSOW7EC6.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "sys_types"
