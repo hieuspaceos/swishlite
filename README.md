@@ -54,6 +54,19 @@ Prebuilt app (arm64, macOS 14+):
    or run `xattr -dr com.apple.quarantine /Applications/SwishLite.app`.
 4. Launch; grant **Accessibility** when prompted, then quit & relaunch.
 
+## Install
+
+**Homebrew (recommended)**
+
+```sh
+brew tap hieuspaceos/suite && brew trust hieuspaceos/suite
+brew install --cask swishlite
+```
+
+**Manual** — grab the DMG from
+[Releases](https://github.com/hieuspaceos/swishlite/releases/latest), drag into
+/Applications, right-click → Open once (ad-hoc signed).
+
 ## Build from source
 
 ```sh
