@@ -101,3 +101,22 @@ Menubar icon → **Settings…**:
 - Menubar-area gestures are listed in Settings but not yet implemented.
 - Two-stage combos reset after ~1 s of inactivity.
 - Zones apply to the screen containing the window.
+## Security & trust
+
+- **Open source** — every byte of the release binary is produced from the
+  commit you can read, by GitHub Actions (see the workflow run linked in
+  each release). No opaque build steps.
+- **Checksums** — every release ships `SwishLite.dmg.sha256`. Verify:
+  ```sh
+  shasum -a 256 SwishLite.dmg
+  ```
+- **No telemetry, no account, no network calls** — the app works fully
+  offline; nothing leaves your Mac.
+- **Permissions** — SwishLite asks for Accessibility + Input Monitoring (System Settings → Privacy & Security)
+  and nothing else.
+- **Ad-hoc signed** — not yet notarized (needs a paid Apple Developer
+  account). On first launch macOS shows "cannot be opened because the
+  developer cannot be verified" — right-click → **Open** once, then it
+  runs normally forever after.
+- **Prefer building yourself?** `git clone`, `make`, `make run` —
+  no external dependencies, readable in one sitting.

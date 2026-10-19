@@ -1,6 +1,7 @@
 import Cocoa
 import ApplicationServices
 import ServiceManagement
+import Combine
 
 enum SnapZone: Equatable {
     case left, right, maximize, center, minimize, closeApp
@@ -19,6 +20,12 @@ enum SnapZone: Equatable {
 final class GestureEngine: ObservableObject {
     let settings = Settings.shared
 
+    /// Mirror of `settings.enabled` readable on the event-tap thread —
+    /// lets the tap callback early-out before any AX work without
+    /// touching UserDefaults or hopping to main.
+    nonisolated(unsafe) private var enabledFlag = true
+    private var settingsObserver: AnyCancellable?
+
     // CGEventTap state
     private var eventTap: CFMachPort?
     private var runLoopSource: CFRunLoopSource?
@@ -32,8 +39,11 @@ final class GestureEngine: ObservableObject {
 
     // pinch accumulation
 
-    // unsnap memory
+    // unsnap memory — bounded LRU: windowKey() can collide and dead-window
+    // entries would otherwise accumulate for the process lifetime.
     private var lastFrames: [Int: CGRect] = [:]
+    private var lastFramesOrder: [Int] = []   // oldest → newest
+    private static let lastFramesLimit = 64
 
     // drag-on-titlebar state
     private var dragWindow: AXUIElement?
@@ -47,6 +57,9 @@ final class GestureEngine: ObservableObject {
     // MARK: - Lifecycle
 
     func start() {
+        enabledFlag = settings.enabled
+        settingsObserver = settings.$enabled
+            .sink { [weak self] v in self?.enabledFlag = v }
         startEventTap()
         // Swish-style: dragging a snapped window by its title bar restores it.
         dragMonitor = NSEvent.addGlobalMonitorForEvents(matching: [.leftMouseDragged]) { [weak self] ev in
@@ -127,9 +140,22 @@ final class GestureEngine: ObservableObject {
     /// Called on the event-tap thread; AX work hops to main.
     nonisolated private func handleGestureEvent(type: CGEventType, event: CGEvent)
         -> Unmanaged<CGEvent>? {
+        // Early-out before any AX/IPC work when disabled — the tap still
+        // sees every event system-wide, so this guard is the hot path.
+        // Still clear per-gesture state on phase .ended/.cancelled so a
+        // mid-swipe disable can't leave the recognizer stuck committed.
+        guard enabledFlag else {
+            if Int(type.rawValue) == 22 {
+                let phase = event.getIntegerValueField(CGEventField(rawValue: 99)!)
+                if phase == 4 || phase == 8 {
+                    scrollProbeHit = nil
+                    DispatchQueue.main.async { [weak self] in self?.endScrollGesture() }
+                }
+            }
+            return Unmanaged.passUnretained(event)
+        }
         let raw = Int(type.rawValue)
         let loc = event.location
-
 
         switch raw {
         case 22: // scrollWheel — two-finger swipe arrives here (Swish's scrollDataX/Y path)
@@ -144,47 +170,55 @@ final class GestureEngine: ObservableObject {
             }
             let dy = event.getDoubleValueField(CGEventField(rawValue: 96)!)  // PointDeltaAxis1 = vertical
             let dx = event.getDoubleValueField(CGEventField(rawValue: 97)!)  // PointDeltaAxis2 = horizontal
-            // Swish honors Natural scrolling: non-inverted device → flip deltas
-            // so a physical finger swipe maps to the same direction everywhere
 
-            var inv = false
-            // Hit-test once per gesture (phase 1 = began): the swipe is
+            // Hit-test exactly once per gesture, at phase .began: the swipe is
             // anchored to where it started — re-testing per 125Hz event is a
             // synchronous AX IPC chain on the tap thread and risks
-            // tapDisabledByTimeout.
-            if phase == 1 { scrollProbeHit = nil }
-            if scrollProbeHit == nil {
+            // tapDisabledByTimeout. Phase-0 events (plain mouse wheels) and
+            // mid-stream events never touch AX.
+            if phase == 1 {
                 let dockItem = DockIcon.dockItemAt(loc)
                 let hit = dockItem != nil || lastMinimizedWindow != nil
                           || Self.pointOnAnyTitleBar(loc)
-                scrollProbeHit = (hit, dockItem?.pid ?? 0)
+                // Swish honors Natural scrolling: non-inverted device → flip
+                // deltas so a physical swipe maps the same way everywhere.
+                // Sampled once at .began — avoids an NSEvent alloc per event.
+                let inv = NSEvent(cgEvent: event)?.isDirectionInvertedFromDevice ?? false
+                scrollProbeHit = (hit, dockItem?.pid ?? 0, inv)
             }
-            let (onTitleBar, dockPID) = scrollProbeHit!
-            if onTitleBar && (dx != 0 || dy != 0) {
-                if let ev = NSEvent(cgEvent: event) { inv = ev.isDirectionInvertedFromDevice }
-                let fx = inv ? dx : -dx
-                let fy = inv ? dy : -dy
-                DispatchQueue.main.async { [weak self] in
-                    self?.handleScrollDelta(dx: fx, dy: fy, at: loc, dockPID: dockPID)
-                }
+            guard let (onTitleBar, dockPID, inv) = scrollProbeHit,
+                  onTitleBar, dx != 0 || dy != 0
+            else { return gestureCommitted ? nil : Unmanaged.passUnretained(event) }
+            let fx = inv ? dx : -dx
+            let fy = inv ? dy : -dy
+            DispatchQueue.main.async { [weak self] in
+                self?.handleScrollDelta(dx: fx, dy: fy, at: loc, dockPID: dockPID)
             }
             // consume only while a committed swipe is in progress (Swish's isSwiping flag)
             return gestureCommitted ? nil : Unmanaged.passUnretained(event)
 
         case 29: // NSEventType.gesture — magnify/swipe arrive with this type
             guard let ev = NSEvent(cgEvent: event) else { return Unmanaged.passUnretained(event) }
-            if ev.type == .magnify {
-                let mag = ev.magnification
+            guard ev.type == .magnify else { return Unmanaged.passUnretained(event) }
+            // Same rule as scroll: pay for the AX hit-test once per gesture,
+            // at phase .began — never per magnify event (~60-120Hz stream).
+            let phase = event.getIntegerValueField(CGEventField(rawValue: 99)!)
+            if phase == 4 || phase == 8 { magProbeHit = nil; return Unmanaged.passUnretained(event) }
+            if phase == 1 {
                 let dockPID = DockIcon.dockItemAt(loc)?.pid ?? 0
-                let onTitleBar = dockPID != 0 || Self.pointOnAnyTitleBar(loc)
-                if onTitleBar {
-                    DispatchQueue.main.async { [weak self] in
-                        self?.handleMagnify(mag, at: loc, dockPID: dockPID)
-                    }
-                }
-                return onTitleBar ? nil : Unmanaged.passUnretained(event)
+                magProbeHit = (dockPID != 0 || Self.pointOnAnyTitleBar(loc), dockPID)
+            } else if magProbeHit == nil, phase == 0 {
+                // Phaseless magnify stream (no .began): probe per event like before.
+                let dockPID = DockIcon.dockItemAt(loc)?.pid ?? 0
+                magProbeHit = (dockPID != 0 || Self.pointOnAnyTitleBar(loc), dockPID)
             }
-            return Unmanaged.passUnretained(event)
+            guard let (onTitleBar, dockPID) = magProbeHit, onTitleBar
+            else { return Unmanaged.passUnretained(event) }
+            let mag = ev.magnification
+            DispatchQueue.main.async { [weak self] in
+                self?.handleMagnify(mag, at: loc, dockPID: dockPID)
+            }
+            return nil
 
         case 32: // smart zoom = two-finger double-tap → unsnap/restore
             let onTitleBar = Self.pointOnAnyTitleBar(loc)
@@ -209,14 +243,16 @@ final class GestureEngine: ObservableObject {
     // MARK: - Scroll accumulation (two-finger swipe → snap, Swish's scrollDataX/Y path)
 
     private var scrollAcc = CGVector.zero
-    private var lastScrollTime: TimeInterval = 0
     private var scrollWindow: AXUIElement?
     private var scrollScreen: NSScreen?
     /// true while a snap gesture is in progress — tap consumes scroll events then
     nonisolated(unsafe) private var gestureCommitted = false
-    /// Per-scroll-gesture hit-test cache — cleared on phase 1 (began).
+    /// Per-scroll-gesture hit-test cache — set at phase .began, cleared on
+    /// .ended/.cancelled. (onTitleBar-or-dockItem, dockPID, directionInverted).
     /// Read/written on the event-tap thread only.
-    nonisolated(unsafe) private var scrollProbeHit: (Bool, pid_t)?
+    nonisolated(unsafe) private var scrollProbeHit: (Bool, pid_t, Bool)?
+    /// Same per-gesture hit-test cache for the magnify stream.
+    nonisolated(unsafe) private var magProbeHit: (Bool, pid_t)?
 
     @MainActor
     private func handleScrollDelta(dx: Double, dy: Double, at loc: CGPoint, dockPID: pid_t = 0) {
@@ -244,8 +280,6 @@ final class GestureEngine: ObservableObject {
             scrollAcc = .zero
             return
         }
-
-        lastScrollTime = ProcessInfo.processInfo.systemUptime
 
         // capture target once so mid-gesture cursor drift doesn't switch windows;
         // a minimized window can't be hit-tested — fall back to the tracked one.
@@ -478,14 +512,13 @@ final class GestureEngine: ObservableObject {
             AXUIElementSetAttributeValue(win, "AXMinimized" as CFString, kCFBooleanTrue)
             return
         case .restore:
-            let key = windowKey(win)
-            guard let f = lastFrames[key] else { return }
+            guard let f = rememberedFrame(for: win) else { return }
             target = f
         case .closeApp:
             return   // handled in applyPinchTo, never reaches here
         }
         if zone != .restore, let cur = WindowControl.frame(of: win) {
-            lastFrames[windowKey(win)] = cur
+            recordFrame(cur, for: win)
         }
         WindowControl.setFrame(win, target, animate: settings.animationDuration)
         bezel.show(zone: zone, at: NSEvent.mouseLocation)
@@ -497,6 +530,28 @@ final class GestureEngine: ObservableObject {
         var wid: AnyObject?
         _ = AXUIElementCopyAttributeValue(win, "AXWindowID" as CFString, &wid)
         return Int(pid) ^ ((wid as? Int) ?? 0)
+    }
+
+    /// LRU write — caps `lastFrames` so colliding/dead-window keys can't
+    /// grow the map for the process lifetime. Commit path only; not per event.
+    private func recordFrame(_ f: CGRect, for win: AXUIElement) {
+        let key = windowKey(win)
+        lastFrames[key] = f
+        lastFramesOrder.removeAll { $0 == key }
+        lastFramesOrder.append(key)
+        while lastFramesOrder.count > Self.lastFramesLimit {
+            let evicted = lastFramesOrder.removeFirst()
+            lastFrames.removeValue(forKey: evicted)
+        }
+    }
+
+    /// LRU read — restores and refreshes the entry's recency.
+    private func rememberedFrame(for win: AXUIElement) -> CGRect? {
+        let key = windowKey(win)
+        guard let f = lastFrames[key] else { return nil }
+        lastFramesOrder.removeAll { $0 == key }
+        lastFramesOrder.append(key)
+        return f
     }
 
     // MARK: - Coord helpers
