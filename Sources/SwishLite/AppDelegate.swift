@@ -15,6 +15,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         let menu = NSMenu()
         menu.addItem(NSMenuItem(title: "Settings…", action: #selector(openSettings), keyEquivalent: ","))
         menu.addItem(.separator())
+        menu.addItem(NSMenuItem(title: "Donate ♥",
+                                action: #selector(donate), keyEquivalent: ""))
+        menu.addItem(.separator())
         menu.addItem(NSMenuItem(title: "Quit", action: #selector(quit), keyEquivalent: "q"))
         statusItem.menu = menu
         Permissions.ensureAccessibility()
@@ -50,5 +53,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         }
     }
 
+    @objc private func donate() {
+        NSWorkspace.shared.open(URL(string: "https://ko-fi.com/hieuspaceos")!)
+    }
     @objc private func quit() { NSApp.terminate(nil) }
 }
