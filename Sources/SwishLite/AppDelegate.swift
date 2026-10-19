@@ -54,7 +54,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     }
 
     @objc private func donate() {
-        NSWorkspace.shared.open(URL(string: "https://ko-fi.com/hieuspaceos")!)
+        NSWorkspace.shared.open(URL(string: "https://github.com/sponsors/hieuspaceos")!)
     }
     @objc private func quit() { NSApp.terminate(nil) }
 }
