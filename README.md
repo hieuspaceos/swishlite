@@ -43,7 +43,18 @@ Performed while hovering an app's **Dock icon**:
 | Pinch in | Quit the app |
 | Pinch out | Restore all of that app's windows |
 
-## Build & Run
+## Install
+
+Prebuilt app (arm64, macOS 14+):
+
+1. Download **SwishLite.zip** from the
+   [latest release](https://github.com/hieuspaceos/swishlite/releases/latest).
+2. Unzip and drag `SwishLite.app` into `/Applications`.
+3. The app is ad-hoc signed — if Gatekeeper blocks it, right-click → Open,
+   or run `xattr -dr com.apple.quarantine /Applications/SwishLite.app`.
+4. Launch; grant **Accessibility** when prompted, then quit & relaunch.
+
+## Build from source
 
 ```sh
 ./build-app.sh     # builds build/SwishLite.app (ad-hoc signed)
