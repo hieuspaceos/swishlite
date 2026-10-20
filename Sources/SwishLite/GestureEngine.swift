@@ -127,13 +127,13 @@ final class GestureEngine: ObservableObject {
             userInfo: Unmanaged.passUnretained(self).toOpaque()
         )
         guard let tap = eventTap else {
-            print("[swishlite] event tap failed — grant Accessibility to this app")
+            fputs("[swishlite] event tap failed — grant Accessibility to this app\n", stderr)
             return
         }
         runLoopSource = CFMachPortCreateRunLoopSource(nil, tap, 0)
         CFRunLoopAddSource(CFRunLoopGetMain(), runLoopSource, .commonModes)
         CGEvent.tapEnable(tap: tap, enable: true)
-        print("[swishlite] gesture event tap active")
+        fputs("[swishlite] gesture event tap active\n", stderr)
     }
 
     /// Returns nil to consume the event (stops space-switching etc.) or the event to pass through.
@@ -148,7 +148,6 @@ final class GestureEngine: ObservableObject {
             if Int(type.rawValue) == 22 {
                 let phase = event.getIntegerValueField(CGEventField(rawValue: 99)!)
                 if phase == 4 || phase == 8 {
-                    scrollProbeHit = nil
                     DispatchQueue.main.async { [weak self] in self?.endScrollGesture() }
                 }
             }
@@ -164,33 +163,28 @@ final class GestureEngine: ObservableObject {
             // momentum (coasting after fingers lifted) is never part of the swipe
             guard momentum == 0 else { return Unmanaged.passUnretained(event) }
             if phase == 4 || phase == 8 {
-                scrollProbeHit = nil
                 DispatchQueue.main.async { [weak self] in self?.endScrollGesture() }
                 return gestureCommitted ? nil : Unmanaged.passUnretained(event)
             }
             let dy = event.getDoubleValueField(CGEventField(rawValue: 96)!)  // PointDeltaAxis1 = vertical
             let dx = event.getDoubleValueField(CGEventField(rawValue: 97)!)  // PointDeltaAxis2 = horizontal
 
-            // Hit-test exactly once per gesture, at phase .began: the swipe is
-            // anchored to where it started — re-testing per 125Hz event is a
-            // synchronous AX IPC chain on the tap thread and risks
-            // tapDisabledByTimeout. Phase-0 events (plain mouse wheels) and
-            // mid-stream events never touch AX.
+            // AX hit-test runs on hitQueue, never here — the tap thread only
+            // reads the prefetched cache. A stalled AX server must not freeze
+            // the system event pipeline.
             if phase == 1 {
-                let dockItem = DockIcon.dockItemAt(loc)
-                let hit = dockItem != nil || lastMinimizedWindow != nil
-                          || Self.pointOnAnyTitleBar(loc)
+                prefetchHit(at: loc, force: true)
                 // Swish honors Natural scrolling: non-inverted device → flip
                 // deltas so a physical swipe maps the same way everywhere.
-                // Sampled once at .began — avoids an NSEvent alloc per event.
-                let inv = NSEvent(cgEvent: event)?.isDirectionInvertedFromDevice ?? false
-                scrollProbeHit = (hit, dockItem?.pid ?? 0, inv)
+                gestureInverted = NSEvent(cgEvent: event)?.isDirectionInvertedFromDevice ?? false
             }
-            guard let (onTitleBar, dockPID, inv) = scrollProbeHit,
-                  onTitleBar, dx != 0 || dy != 0
+            // A minimized window can't be hit-tested — restore gesture uses
+            // the tracked window directly, no prefetch needed.
+            guard let (onTitleBar, dockPID) = cachedHit(at: loc),
+                  (onTitleBar || lastMinimizedWindow != nil), dx != 0 || dy != 0
             else { return gestureCommitted ? nil : Unmanaged.passUnretained(event) }
-            let fx = inv ? dx : -dx
-            let fy = inv ? dy : -dy
+            let fx = gestureInverted ? dx : -dx
+            let fy = gestureInverted ? dy : -dy
             DispatchQueue.main.async { [weak self] in
                 self?.handleScrollDelta(dx: fx, dy: fy, at: loc, dockPID: dockPID)
             }
@@ -200,19 +194,18 @@ final class GestureEngine: ObservableObject {
         case 29: // NSEventType.gesture — magnify/swipe arrive with this type
             guard let ev = NSEvent(cgEvent: event) else { return Unmanaged.passUnretained(event) }
             guard ev.type == .magnify else { return Unmanaged.passUnretained(event) }
-            // Same rule as scroll: pay for the AX hit-test once per gesture,
-            // at phase .began — never per magnify event (~60-120Hz stream).
+            // Same rule as scroll: hit-test prefetched on hitQueue at .began —
+            // never synchronous AX on the tap thread.
             let phase = event.getIntegerValueField(CGEventField(rawValue: 99)!)
-            if phase == 4 || phase == 8 { magProbeHit = nil; return Unmanaged.passUnretained(event) }
+            if phase == 4 || phase == 8 { return Unmanaged.passUnretained(event) }
             if phase == 1 {
-                let dockPID = DockIcon.dockItemAt(loc)?.pid ?? 0
-                magProbeHit = (dockPID != 0 || Self.pointOnAnyTitleBar(loc), dockPID)
-            } else if magProbeHit == nil, phase == 0 {
-                // Phaseless magnify stream (no .began): probe per event like before.
-                let dockPID = DockIcon.dockItemAt(loc)?.pid ?? 0
-                magProbeHit = (dockPID != 0 || Self.pointOnAnyTitleBar(loc), dockPID)
+                prefetchHit(at: loc, force: true)
+            } else if phase == 0 {
+                // Phaseless magnify stream (no .began): refresh the cache when
+                // the cursor moved since the last probe.
+                prefetchHit(at: loc, force: false)
             }
-            guard let (onTitleBar, dockPID) = magProbeHit, onTitleBar
+            guard let (onTitleBar, dockPID) = cachedHit(at: loc), onTitleBar || dockPID != 0
             else { return Unmanaged.passUnretained(event) }
             let mag = ev.magnification
             DispatchQueue.main.async { [weak self] in
@@ -221,13 +214,15 @@ final class GestureEngine: ObservableObject {
             return nil
 
         case 32: // smart zoom = two-finger double-tap → unsnap/restore
-            let onTitleBar = Self.pointOnAnyTitleBar(loc)
-            if onTitleBar {
-                DispatchQueue.main.async { [weak self] in
-                    self?.handleDoubleTap(at: loc)
-                }
+            // Dispatch the work to main unconditionally — the tap thread only
+            // gates on the prefetched cache so a slow AX probe can't stall input.
+            prefetchHit(at: loc, force: false)
+            guard cachedHit(at: loc)?.onTitle == true
+            else { return Unmanaged.passUnretained(event) }
+            DispatchQueue.main.async { [weak self] in
+                self?.handleDoubleTap(at: loc)
             }
-            return onTitleBar ? nil : Unmanaged.passUnretained(event)
+            return nil
 
         default:
             return Unmanaged.passUnretained(event)
@@ -247,12 +242,54 @@ final class GestureEngine: ObservableObject {
     private var scrollScreen: NSScreen?
     /// true while a snap gesture is in progress — tap consumes scroll events then
     nonisolated(unsafe) private var gestureCommitted = false
-    /// Per-scroll-gesture hit-test cache — set at phase .began, cleared on
-    /// .ended/.cancelled. (onTitleBar-or-dockItem, dockPID, directionInverted).
-    /// Read/written on the event-tap thread only.
-    nonisolated(unsafe) private var scrollProbeHit: (Bool, pid_t, Bool)?
-    /// Same per-gesture hit-test cache for the magnify stream.
-    nonisolated(unsafe) private var magProbeHit: (Bool, pid_t)?
+    /// Generation counter — only the newest pending prefetch applies its
+    /// result, so queued AX lookups can't write back stale hits.
+    nonisolated(unsafe) private var prefetchGen = 0
+
+    // Hit-test cache. AX hit-tests are synchronous IPC — they must NEVER
+    // run on the event-tap thread: a stalled AX server blocks the whole
+    // system event pipeline and freezes trackpad input ("đứng máy").
+    // Instead the tap thread only reads this lock-protected cache and a
+    // serial background queue re-probes on each gesture .began.
+    private struct Hit { var loc: CGPoint; var onTitle: Bool; var dockPID: pid_t }
+    private let hitLock = NSLock()
+    nonisolated(unsafe) private var hitCache: Hit?
+    /// Serial queue — one AX probe at a time, newest supersedes older queued.
+    private let hitQueue = DispatchQueue(label: "swishlite.hittest")
+
+    /// Schedule an AX hit-test off the tap thread. `force` at gesture .began;
+    /// otherwise skips if a cached hit for ~this point already exists.
+    nonisolated private func prefetchHit(at loc: CGPoint, force: Bool) {
+        hitLock.lock()
+        if !force, let c = hitCache, abs(c.loc.x - loc.x) < 4, abs(c.loc.y - loc.y) < 4 {
+            hitLock.unlock(); return
+        }
+        prefetchGen += 1
+        let gen = prefetchGen
+        hitLock.unlock()
+        hitQueue.async { [weak self] in
+            let hit = Hit(loc: loc,
+                          onTitle: Self.pointOnAnyTitleBar(loc),
+                          dockPID: DockIcon.dockItemAt(loc)?.pid ?? 0)
+            guard let self else { return }
+            self.hitLock.lock()
+            if self.prefetchGen == gen { self.hitCache = hit }
+            self.hitLock.unlock()
+        }
+    }
+
+    /// Tap-thread read of the last prefetched hit — no AX, no blocking.
+    nonisolated private func cachedHit(at loc: CGPoint) -> (onTitle: Bool, dockPID: pid_t)? {
+        hitLock.lock()
+        defer { hitLock.unlock() }
+        guard let c = hitCache, abs(c.loc.x - loc.x) < 24, abs(c.loc.y - loc.y) < 24
+        else { return nil }
+        return (c.onTitle, c.dockPID)
+    }
+
+    /// Scroll-gesture direction sampling (Natural scrolling) — captured on
+    /// the tap thread at .began, applied to deltas until gesture end.
+    nonisolated(unsafe) private var gestureInverted = false
 
     @MainActor
     private func handleScrollDelta(dx: Double, dy: Double, at loc: CGPoint, dockPID: pid_t = 0) {
