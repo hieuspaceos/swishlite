@@ -4,7 +4,7 @@
 <dict>
 	<key>CFBundleExecutable</key>
 	<string>SwishLite</string>
-	<key>CFBundleIconName</key>
+	<key>CFBundleIconFile</key>
 	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.pet.swishlite</string>
