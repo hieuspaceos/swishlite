@@ -83,7 +83,36 @@ final class GestureEngine: ObservableObject {
         }
         Multitouch.shared.onTouchEnd = { [weak self] in self?.pinchFired = false }
         Multitouch.shared.start()
+
+        // Warm the AX pipeline at launch: the first AXUIElementCopy* call
+        // after a fresh TCC grant can take seconds (tccd lazy-init), which
+        // would leave the hit cache empty for the user's first ~30s of
+        // gestures. Prime it now — cheap, off the tap thread.
+        hitQueue.async {
+            _ = DockIcon.dockItemAt(.zero)
+            _ = Self.pointOnAnyTitleBar(.zero)
+        }
+
+        // Keep hit-testing the live cursor position for the first minute:
+        // AX queries stall for ~10-30s while TCC/AX services cold-init after
+        // a fresh grant — proactive probes fill the cache the moment the
+        // pipeline is ready instead of leaving every gesture dead for that
+        // whole window.
+        startTime = Date()
+        cursorProbeTimer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { [weak self] _ in
+            guard let self else { return }
+            Task { @MainActor in
+                if Date().timeIntervalSince(self.startTime) > 60 {
+                    self.cursorProbeTimer?.invalidate(); return
+                }
+                guard let ax = Self.axPoint(NSEvent.mouseLocation) else { return }
+                self.prefetchHit(at: ax, force: true)
+            }
+        }
     }
+
+    private var startTime = Date()
+    private var cursorProbeTimer: Timer?
 
     func stop() {
         if let tap = eventTap { CGEvent.tapEnable(tap: tap, enable: false) }
@@ -259,7 +288,9 @@ final class GestureEngine: ObservableObject {
 
     /// Schedule an AX hit-test off the tap thread. `force` at gesture .began;
     /// otherwise skips if a cached hit for ~this point already exists.
-    nonisolated private func prefetchHit(at loc: CGPoint, force: Bool) {
+    /// `retry` — one deferred re-probe when the lookup came back empty, to
+    /// cover the TCC warm-up window where AX queries fail transiently.
+    nonisolated private func prefetchHit(at loc: CGPoint, force: Bool, retry: Bool = true) {
         hitLock.lock()
         if !force, let c = hitCache, abs(c.loc.x - loc.x) < 4, abs(c.loc.y - loc.y) < 4 {
             hitLock.unlock(); return
@@ -275,6 +306,13 @@ final class GestureEngine: ObservableObject {
             self.hitLock.lock()
             if self.prefetchGen == gen { self.hitCache = hit }
             self.hitLock.unlock()
+            // Negative result during the AX warm-up window — retry once so a
+            // swipe that started before the pipeline was ready still lands.
+            if retry && !hit.onTitle && hit.dockPID == 0 {
+                DispatchQueue.global().asyncAfter(deadline: .now() + 0.4) { [weak self] in
+                    self?.prefetchHit(at: loc, force: true, retry: false)
+                }
+            }
         }
     }
 
