@@ -50,8 +50,7 @@ Prebuilt app (arm64, macOS 14+):
 1. Download **SwishLite.zip** from the
    [latest release](https://github.com/hieuspaceos/swishlite/releases/latest).
 2. Unzip and drag `SwishLite.app` into `/Applications`.
-3. The app is ad-hoc signed — if Gatekeeper blocks it, right-click → Open,
-   or run `xattr -dr com.apple.quarantine /Applications/SwishLite.app`.
+3. Open directly — release builds are Developer ID signed + notarized.
 4. Launch; grant **Accessibility** when prompted, then quit & relaunch.
 
 ## Install
@@ -65,7 +64,7 @@ brew install --cask swishlite
 
 **Manual** — grab the DMG from
 [Releases](https://github.com/hieuspaceos/swishlite/releases/latest), drag into
-/Applications, right-click → Open once (ad-hoc signed).
+/Applications and open (Developer ID signed + notarized).
 
 ## Build from source
 
@@ -94,9 +93,9 @@ AX API and reads system gesture events through a `CGEventTap`. On first
 launch macOS prompts for it; grant under
 *System Settings → Privacy & Security → Accessibility*, then quit & relaunch.
 
-Because the app is ad-hoc signed, macOS may tie the grant to the binary —
-if gestures stop working after a rebuild, remove and re-add SwishLite in
-Accessibility settings.
+Only local `build-app.sh` builds are ad-hoc signed — macOS may tie the
+Accessibility grant to the binary. If gestures stop working after a rebuild,
+remove and re-add SwishLite in Accessibility settings.
 
 ## Settings
 
@@ -127,9 +126,8 @@ Menubar icon → **Settings…**:
   offline; nothing leaves your Mac.
 - **Permissions** — SwishLite asks for Accessibility + Input Monitoring (System Settings → Privacy & Security)
   and nothing else.
-- **Ad-hoc signed** — not yet notarized (needs a paid Apple Developer
-  account). On first launch macOS shows "cannot be opened because the
-  developer cannot be verified" — right-click → **Open** once, then it
-  runs normally forever after.
+- **Signed & notarized** — release builds are signed with a Developer ID
+  certificate and notarized by Apple; macOS opens them with no Gatekeeper
+  warning.
 - **Prefer building yourself?** `git clone`, `make`, `make run` —
   no external dependencies, readable in one sitting.
